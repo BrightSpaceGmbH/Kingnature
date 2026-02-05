@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #8B1A32;
-  --color-primary-light: #a82545;
-  --color-primary-dark: #6d1426;
+  --color-primary: #B23E2E;
+  --color-primary-light: #c95545;
+  --color-primary-dark: #8f3225;
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+  letter-spacing: -0.04em;
 }
 
 @theme inline {
-  --color-primary: #8B1A32;
-  --color-primary-light: #a82545;
-  --color-primary-dark: #6d1426;
+  --color-primary: #B23E2E;
+  --color-primary-light: #c95545;
+  --color-primary-dark: #8f3225;
 }
 
 /* Animations */
@@ -60,6 +66,10 @@
 .animate-sway {
   animation: sway 3s ease-in-out infinite;
   display: inline-block;
+}
+
+.duration-400 {
+  transition-duration: 400ms;
 }
 
 /* Smooth scrollbar */
