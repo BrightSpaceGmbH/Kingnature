@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kingnature - Premium Nahrungsergänzungsmittel aus der Schweiz für Kasachstan. Finde das perfekte Supplement für deine Gesundheitsziele.">
+    <title>Kingnature | Nahrungsergänzungsmittel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-king">king</span><span class="logo-nature">nature</span>
+            <span class="logo-leaf">🌿</span>
+        </div>
+    </header>
+
+    <!-- Product Carousel -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <img src="webp/Magnesium.webp" alt="Magnesium Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/msm.webp" alt="MSM Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/omega3.webp" alt="Omega-3 Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/oregano.webp" alt="Oregano Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/probiotic.webp" alt="Probiotic Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/q10.webp" alt="Q10 Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/relax.webp" alt="Relax Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/vino.webp" alt="Vino Vida" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="webp/vitamin.webp" alt="Vitamin K2 Vida" loading="lazy">
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section class="questionnaire-section" id="questionnaire">
+        <div class="questionnaire-container">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span class="progress-text" id="progressText">Schritt 1 von 6</span>
+            </div>
+
+            <!-- Step 1: Health Concerns -->
+            <div class="step active" id="step1">
+                <h2 class="step-title">Wo wünschst du dir am dringendsten eine Veränderung?</h2>
+                <div class="options-grid health-options">
+                    <button class="option-btn" data-value="erkaeltung">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-erkaeltung">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 8v48M8 32h48M16 16l32 32M48 16L16 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <span>Erkältung / Infekt</span>
+                    </button>
+                    <button class="option-btn" data-value="gelenke">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-gelenke">
+                                <ellipse cx="32" cy="20" rx="12" ry="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <ellipse cx="32" cy="44" rx="12" ry="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 26c-4 4-4 12 0 16M40 26c4 4 4 12 0 16" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Gelenke & Knochen</span>
+                    </button>
+                    <button class="option-btn" data-value="haut">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-haut">
+                                <path d="M32 8c-12 0-20 10-20 24s8 24 20 24 20-10 20-24S44 8 32 8z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 28c0 0 4-4 10-4s10 4 10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="24" cy="24" r="2" fill="currentColor"/>
+                                <circle cx="40" cy="24" r="2" fill="currentColor"/>
+                                <path d="M28 40c2 2 6 2 8 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Haut & Haar</span>
+                    </button>
+                    <button class="option-btn" data-value="herz">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-herz">
+                                <path d="M32 52C20 44 12 36 12 26c0-8 6-14 14-14 4 0 8 2 10 6 2-4 6-6 10-6 8 0 14 6 14 14 0 10-8 18-20 26z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 32h6l4-8 6 16 4-8h6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Herz-Kreislauf</span>
+                    </button>
+                    <button class="option-btn" data-value="immun">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-immun">
+                                <path d="M32 6L12 16v16c0 14 8 22 20 26 12-4 20-12 20-26V16L32 6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M26 32l6 6 10-12" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Immunsystem</span>
+                    </button>
+                    <button class="option-btn" data-value="leistung">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-leistung">
+                                <path d="M36 8L16 36h16l-4 20 20-28H32l4-20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M28 28l8 8" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <span>Leistungsfähigkeit</span>
+                    </button>
+                    <button class="option-btn" data-value="muedigkeit">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-muedigkeit">
+                                <rect x="16" y="24" width="32" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <rect x="20" y="28" width="8" height="12" rx="2" fill="currentColor" opacity="0.3"/>
+                                <rect x="30" y="28" width="8" height="12" rx="2" fill="currentColor" opacity="0.5"/>
+                                <rect x="40" y="28" width="8" height="12" rx="2" fill="currentColor" opacity="0.8"/>
+                                <path d="M50 20l4-4M54 24h4M50 28l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Müdigkeit / Energie</span>
+                    </button>
+                    <button class="option-btn" data-value="stress">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-stress">
+                                <ellipse cx="32" cy="32" rx="20" ry="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M18 28c2-4 6-6 10-6M36 22c4 0 8 2 10 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M16 40s8 8 16 0 16 0 16 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Stress</span>
+                    </button>
+                    <button class="option-btn" data-value="longevity">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-longevity">
+                                <path d="M32 8c-8 0-14 6-14 14v20c0 8 6 14 14 14s14-6 14-14V22c0-8-6-14-14-14z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 22h16v10c0 4-4 8-8 8s-8-4-8-8V22z" fill="currentColor" opacity="0.2"/>
+                                <line x1="32" y1="22" x2="32" y2="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Longevity</span>
+                    </button>
+                    <button class="option-btn" data-value="schmerzen">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-schmerzen">
+                                <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.3"/>
+                                <circle cx="32" cy="32" r="3" fill="currentColor"/>
+                                <path d="M32 8v8M32 48v8M8 32h8M48 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Schmerzen</span>
+                    </button>
+                    <button class="option-btn" data-value="gewicht">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-gewicht">
+                                <path d="M12 48h40l-6-28H18L12 48z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M28 14l4 4 8-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Gewicht</span>
+                    </button>
+                    <button class="option-btn" data-value="verdauung">
+                        <div class="option-icon">
+                            <svg viewBox="0 0 64 64" class="icon-verdauung">
+                                <path d="M28 12c-8 0-12 4-12 10s4 8 8 10c4 2 8 4 8 10s-4 10-12 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M36 12c8 0 12 4 12 10s-4 8-8 10c-4 2-8 4-8 10s4 10 12 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="24" cy="32" r="3" fill="currentColor" opacity="0.5"/>
+                                <circle cx="40" cy="32" r="3" fill="currentColor" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <span>Verdauung</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Gender -->
+            <div class="step" id="step2">
+                <h2 class="step-title">Welches Geschlecht hast du?</h2>
+                <div class="options-grid gender-options">
+                    <button class="option-btn large" data-value="male">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64" class="icon-male">
+                                <circle cx="28" cy="36" r="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 24L52 12M52 12v14M52 12H38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Männlich</span>
+                    </button>
+                    <button class="option-btn large" data-value="female">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64" class="icon-female">
+                                <circle cx="32" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 40v16M24 50h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Weiblich</span>
+                    </button>
+                    <button class="option-btn large" data-value="diverse">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64" class="icon-diverse">
+                                <circle cx="32" cy="32" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 16V8M32 56v-8M16 32H8M56 32h-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M44 44l6 6M14 14l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Divers</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Allergies -->
+            <div class="step" id="step3">
+                <h2 class="step-title">Hast du Allergien oder Unverträglichkeiten?</h2>
+                <div class="options-grid allergy-initial">
+                    <button class="option-btn large" data-value="yes" id="allergyYes">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 32l6 6 12-12" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Ja</span>
+                    </button>
+                    <button class="option-btn large" data-value="no" id="allergyNo">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 22l20 20M42 22L22 42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Nein</span>
+                    </button>
+                </div>
+                <div class="allergy-details hidden" id="allergyDetails">
+                    <h3 class="sub-title">Welche Allergien hast du?</h3>
+                    <p class="sub-hint">Wähle alle zutreffenden aus</p>
+                    <div class="options-grid multi-select">
+                        <button class="option-btn multi" data-value="fisch">
+                            <span>Fisch</span>
+                        </button>
+                        <button class="option-btn multi" data-value="meeresfruechte">
+                            <span>Meeresfrüchte</span>
+                        </button>
+                        <button class="option-btn multi" data-value="milch">
+                            <span>Milchprodukte</span>
+                        </button>
+                        <button class="option-btn multi" data-value="soja">
+                            <span>Soja</span>
+                        </button>
+                        <button class="option-btn multi" data-value="gluten">
+                            <span>Gluten</span>
+                        </button>
+                        <button class="option-btn multi" data-value="andere">
+                            <span>Andere</span>
+                        </button>
+                    </div>
+                    <button class="continue-btn" id="allergyContinue">Weiter</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Medications -->
+            <div class="step" id="step4">
+                <h2 class="step-title">Nimmst du regelmäßig Medikamente?</h2>
+                <div class="options-grid medication-initial">
+                    <button class="option-btn large" data-value="yes" id="medicationYes">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 32l6 6 12-12" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Ja</span>
+                    </button>
+                    <button class="option-btn large" data-value="no" id="medicationNo">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 22l20 20M42 22L22 42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Nein</span>
+                    </button>
+                </div>
+                <div class="medication-details hidden" id="medicationDetails">
+                    <h3 class="sub-title">Welche Medikamente?</h3>
+                    <p class="sub-hint">Wähle alle zutreffenden aus</p>
+                    <div class="options-grid multi-select medication-grid">
+                        <button class="option-btn multi wide" data-value="morphium">
+                            <span>Schmerzmittel mit Morphium</span>
+                        </button>
+                        <button class="option-btn multi wide" data-value="saeurehemmer">
+                            <span>Säurehemmer wie Pantoprazol oder Ondansetron</span>
+                        </button>
+                        <button class="option-btn multi wide" data-value="antiepileptika">
+                            <span>Antiepileptika wie Clobazam (Frisium)</span>
+                        </button>
+                        <button class="option-btn multi" data-value="risperidon">
+                            <span>Risperidon (Risperdal)</span>
+                        </button>
+                        <button class="option-btn multi" data-value="blutverduenner">
+                            <span>Blutverdünner</span>
+                        </button>
+                        <button class="option-btn multi wide" data-value="statine">
+                            <span>Statine (Cholesterinsenker)</span>
+                        </button>
+                        <button class="option-btn multi" data-value="antidepressiva">
+                            <span>Antidepressiva</span>
+                        </button>
+                        <button class="option-btn multi" data-value="andere">
+                            <span>Andere</span>
+                        </button>
+                    </div>
+                    <button class="continue-btn" id="medicationContinue">Weiter</button>
+                </div>
+            </div>
+
+            <!-- Step 5: Exercise -->
+            <div class="step" id="step5">
+                <h2 class="step-title">Wie oft treibst du Sport?</h2>
+                <div class="options-grid exercise-options">
+                    <button class="option-btn large" data-value="frequent">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M16 32h8l4-12 8 24 4-12h8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="32" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 52h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>3-5 mal in der Woche</span>
+                    </button>
+                    <button class="option-btn large" data-value="moderate">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 28h16M20 40l8-12 8 12M32 28v24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>1-2 mal in der Woche</span>
+                    </button>
+                    <button class="option-btn large" data-value="rarely">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <ellipse cx="32" cy="44" rx="16" ry="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="32" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 28v8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span>Selten bis nie</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 6: Nutrition -->
+            <div class="step" id="step6">
+                <h2 class="step-title">Wie würdest du deine Ernährung beschreiben?</h2>
+                <div class="options-grid nutrition-options">
+                    <button class="option-btn large" data-value="balanced">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 32h20M32 22v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="27" cy="27" r="4" fill="currentColor" opacity="0.3"/>
+                                <circle cx="37" cy="37" r="4" fill="currentColor" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <span>Ausgewogen</span>
+                    </button>
+                    <button class="option-btn large" data-value="vegetarian">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M32 52V28" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 28c-8-8-8-20 0-20s8 12 0 20z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 40c0-8 6-12 12-12M44 40c0-8-6-12-12-12" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <span>Vegetarisch</span>
+                    </button>
+                    <button class="option-btn large" data-value="vegan">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <path d="M32 8c12 0 20 16 20 28s-8 20-20 20S12 48 12 36 20 8 32 8z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 18v28M24 26c4 4 8 8 8 20M40 26c-4 4-8 8-8 20" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <span>Vegan</span>
+                    </button>
+                    <button class="option-btn large" data-value="low-carb">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <rect x="16" y="24" width="32" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 36h16M24 42h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M28 16l4 8 4-8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Low Carb</span>
+                    </button>
+                    <button class="option-btn large" data-value="unbalanced">
+                        <div class="option-icon large">
+                            <svg viewBox="0 0 64 64">
+                                <circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M24 26l4 4-4 4M36 26l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 44c4-4 12-4 16 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Eher unausgewogen</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="step" id="stepResult">
+                <div class="result-container">
+                    <h2 class="result-title">Deine persönliche Empfehlung</h2>
+                    <p class="result-subtitle">Basierend auf deinen Antworten empfehlen wir dir:</p>
+                    <div class="result-product" id="resultProduct">
+                        <img src="" alt="" id="resultImage" class="result-image">
+                        <h3 class="product-name" id="productName"></h3>
+                        <p class="product-description" id="productDescription"></p>
+                    </div>
+                    <button class="preorder-btn" id="preorderBtn">
+                        <span>Vorbestellen</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="restart-btn" id="restartBtn">Erneut starten</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Kingnature. Premium Nahrungsergänzungsmittel aus der Schweiz.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
